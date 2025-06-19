@@ -31,7 +31,7 @@ class RolRepositoryTest {
         entityManager.flush();
         entityManager.clear();
 
-        boolean existe = rolRepository.existsByNombre("PACIENTE");
+        boolean existe = rolRepository.existsByNombre("ADMIN");
 
         assertThat(existe).isTrue();
     }
